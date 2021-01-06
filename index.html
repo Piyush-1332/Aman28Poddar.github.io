@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link rel="icon"
+        href="https://lh3.googleusercontent.com/J9UzdqGkuIXfEhTqj4NT4dU8ahrKy5g3YZ9qVfOYyxC7L43AZe9Oa9ztwpzpsaSpLkYENahuCUyIgulPQw1qgdvb0F6XMYAUwGnXVB4BAKrtmkQixGUNzpvWCTw7Yc4zAbRUame9pWivluL2-zB4gjRSa32RaasjVmJrG7UViwkJfUPJPk2Kvt6g92uh-b8PpPPTAQF4dY_gBalMAGWHCPGKCcHmIrK_wyx1qqo9GEkIPEKbVxRj9nMz2VgFluJSDZSipirSMDDINv6WzuS5oGcl76Mxp9G08530OZqHFbdqvRkfcM8JVVwZfVNWjgNehQPAshh89Rr3VdzIHAvYqcZZQDrmUA7LGkCpDi7W__KguZ1-jm72U8jF8TUxLP_wKVdlGfhOV4xhzhYItBTIsXxWV9vD9sxe_sE9s2xfbUKifWGKA_T97TyxhVkptMAbN6rJUAsz6TjiM6v07rsCYowIS2wT8KYZBbi1NMMDb5c8P7Up23nhlyrLno2zzR-LEMBni3j16aeRA621QseAj3JLV5zpnE6o3qaZiKsUgmxx8IoQU361f6hvybXE7F-wRgvVmhOuo6EGK6TNeoDjFfIz0tYWF0-_EbqDfh2zavgXvKIoPZSjBs4_uExEH1g6qlmVV8PCNpIW923SB4E4pOxWEPjH_kpmC6eOfYklg8iOXfFx87irbDBswJ2C=w648-h864-no?authuser=0"
+        type="image/icon type">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Redressed&family=Satisfy&family=Audiowide&display=swap"
+        rel="stylesheet">
+
+</head>
+<style>
+    nav ul li a {
+        font-family: 'Redressed', cursive;
+        font-size: 27px;
+        padding: 122px;
+    }
+
+    nav ul li a:hover {
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    #home::after {
+        background: url(https://tse3.mm.bing.net/th?id=OIP.cfcFlxCKeYtCGZp60IX4gAHaEK&pid=Api&P=0&w=295&h=166) no-repeat center/cover;
+        /*background-size: 100% 100%;*/
+
+    }
+
+    #home {
+        display: flex;
+        background-color: none;
+        background: url(https://tse3.mm.bing.net/th?id=OIP.cfcFlxCKeYtCGZp60IX4gAHaEK&pid=Api&P=0&w=295&h=166) no-repeat center/cover;
+        background-attachment: fixed;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+        z-index: 1;
+        color: white;
+    }
+
+    #home h1 {
+        font-family: 'Lobster', cursive;
+        font-size: 6vw;
+        padding: 10px;
+    }
+
+    #gk {
+        color: rgb(255, 255, 255);
+        font-size: 3vw;
+        font-family: 'Audiowide', sans-serif;
+        text-shadow: 1px 1px 10px black;
+    }
+
+    .btn:hover {
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    @media only screen and (max-width: 968px) {
+        #content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    #content {
+        display: flex;
+
+    }
+
+    .heading {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-weight: bold;
+        font-style: italic;
+        font-family: 'Satisfy', cursive;
+        text-decoration: underline;
+    }
+    
+    #content img {
+        width: 100%;
+        height: 100%;
+        max-width: 336px;
+        margin: 23px;
+        border-radius: 10%;
+        box-shadow: 13px 14px 12px black;
+    }
+    
+    #content .para {
+        margin: auto;
+    }
+    
+    #content p {
+        font-size: 30px;
+        margin: 8px;
+        font-family: 'Redressed', cursive;
+    }
+    
+    .co1 {
+        border-radius: 25%;
+    }
+    
+    .card-img-overlay {
+        position: relative;
+        display: flex;
+        justify-items: center;
+        height: auto;
+        color: white;
+        width: 100%;
+        flex-direction: column;
+        background-color: black;
+        align-items: center;
+    }
+    
+    .html {
+        display: block;
+    }
+    
+    .links {
+        font-size: 27px;
+        color: black;
+        font-weight: bold;
+        font-family: "Calibri";
+        
+        text-decoration: none;
+    }
+    
+    .href1:hover {
+        color: black;
+        font-style: normal;
+        font-family: "Times New Roman";
+        font-style: italic;
+        text-decoration: underline;
+        background-color: rgb(252, 222, 222);
+        
+    }
+    
+    .details-h {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline
+    }
+    @media only screen and (max-width:415px){
+        #content img{
+            margin-left:15%;
+            float: left;
+            width:70%;
+        }
+    }
+
+    .details {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 27px;
+        
+    }
+    
+    .href1 {
+        margin: 6px;
+        padding: 8px;
+        font-size: 27px;
+        border: 2px solid red;
+        border-radius: 8px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /**max-width:500px; **/
+        text-decoration: none;
+        /**min-width: 500px;**/
+        margin-bottom: 30px;
+        margin-top: 30px;
+        height: 100%;
+        padding-bottom: 50px;
+        margin-left: 6px;
+        box-shadow: 10px 12px 7px black;
+    }
+    
+    @media only screen and(min-width: 969px) {
+        .c {
+            width: 40%;
+            margin: auto;
+            margin-top: 20px;
+        }
+    }
+    
+    @media only screen and(max-width: 969px) {
+        .c {
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+        }
+    }
+    #social{
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        font-family: 'Satisfy', cursive;
+        justify-content:center;
+        align-items:center;
+        color: white;
+    }
+    footer{
+        background-color: black;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href=""><img style="width: 85px;"
+                    src="https://lh3.googleusercontent.com/Ql0ag5whytRgdusHuxemL0n7Ey0DR-5imY-ak6bR_3a2jLUd9cimAIo3xquFqg-SOpB60qbn56ekIXWv5zg0ItqMl7Jjqt510UHsRjHF9adolvFCdP2kFhRLYgGNlTl7M--rCv2MVbIVUlXP8uB2BAm8hhaa58Gn9nLqT00VgiMOIHVaO0q1rU1lteGxlwwQC25JdbWfVfUloHfOS6aRdsqsjtstLqgLZLZUyWptQP5YqFa87VljEekUjrhk3nICHiRuMLUKtdIfBuFxxey4p26PjRFDN7_rR25fi0swtq602pQLOCNsfOHqTZq3Vxg0dM-uC69vBR-ouAqliW9wDrkHT7dSMeWKbCLW86gx_NpENaYqVc1vnoJeY7oNLVdT9OHA2KN5epUb745PKLJ2mjS5hXQCgOzBzSNgNLrrWqPi3zQi6qA4GLL6NS4byjcI2C0ld3iF7HrHuAL8ROtRIheS64clI-2BCm_Fp_9N_0jb1IuJPUJUeThgKDOOQidfsGHmYSQouHfTJulyitjbuV55guRz05GGghQqavoS111dva49AnHjImYilvSEmAqYqjLOvCVpRTcxTD6v-9sY5TaJit5yBX8LCW0vpqpW1twJI1nEZoOBnf4_bj8ydU1qoefcxw6Uq8j4MHbBsydkhbqeqKeXGzHBa9w9yg5GDnxrOV-NUlqJfbzY6jOC=s500-no?authuser=0"
+                    alt="Our Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#work">Work Done</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+                <form class="d-flex ml-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                        style="margin-right:2px; margin-left: auto;">
+                    <button class="btn btn-outline-success" type="submit"
+                        style="margin-right:2px; margin-left: auto;">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="home" class="jumbotron" style="margin-bottom:0px;">
+        <h1 class="display-4">Front-End Web and Python Developer</h1>
+        <hr class="my-4">
+        <p id="gk">
+            I do my work very-effeciently and on-time. I am dedicated to my work, I am sure you will be glad with my
+            work.
+        </p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#contact" role="button">Hire me&rarr;</a>
+        </p>
+    </div>
+    <hr style="margin:0px;">
+    <div class="jumbotron jumbotron-fluid" style="margin-top:0px;margin-bottom:0px;">
+        <div id="about" class="container">
+            <div class="heading">
+                <h1 class="display-4">About Me</h1>
+            </div>
+            <div id="content" class="row">
+                <div class="conimg col-sm-6">
+                    <img src="https://lh3.googleusercontent.com/e743jUPhYxj_WELh8i0xLshLIxGmjGJ7eS_aTLfltDHuTi5vrMIboQNs8JbrRLjBNeMlmZWRkPyhPV0ULSo3LU9IjPGDHdPdvXdmR4SfzbGsaUzWYya-dHWLae9CrkhvY9wWyMYet4HdFca7cjsB_LF3K19OfmIxWiDaaDOzr88G8XE7LwWabo1x6ys4_aXm0lBXtNHYVX9vDufSHcrl72DRHh3ttNLG6ok5QLAokFssG53kC8CyP6C7UB-imbuihJ674V7eQr0Dmf8o1_CU9580DzgC0hyKyP4vm_o-SjQjsqrl9Ga79fz-zO65cUztowASxTsw_LS_9VFh9x6I_dGEtkMpSL6UZ9cuZjzQV9TsAYVZUPahYS5q4syqfLAJm7BS1GNtIJY5UuCz_U7Cq1LQmLY00OoRFktdKdpcf7ySNlUnT4Jn0zmqkAQtdDs0vmLNYtcUtx3IFgbtA6vb8fVbJqax4uJU2mHZhQe4Ufd0DhnbLKhKye13im5j9br5bZGHvl04drfQmWtIsMjRxZULgF5V-ybSsykarCeqJxZk1-ry-HgpLroDa3mJ9-6YkIH5nVSShoGi_s6AU3B8NpBn2vMQ87gac2sfjun1KdycMQ4Kx-aCBwoBvJ91kNtV8jIY3JYnPehUbF81DsFeOQ1L6MHvc1vGvACP_Xgq2A2AFoYqYXZLMN1MCmi8=s640-no?authuser=0"
+                        alt="Me">
+                </div>
+                <div class="para col-sm-6">
+                    <p class="lead">
+                        Hello, I am Aman Poddar, I am a young programmer of age 14, curently pursuing my 10th in
+                        Vijayawada, Andhra Pradesh, India.
+                    </p>
+                    <p>
+                        &nbsp;
+                    </p>
+                    <p class="lead">
+                        I am a Python and Front-End developer. I also have a keen interest in Java, I am interested in
+                        learning other new things related to programming.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="margin:0px;">
+    <div id="work" style="margin: 30px 0px;" style="margin-top:0px;margin-bottom:0px;">
+        <div class="heading">
+            <h1 class="display-4">Work Done By Me</h1>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4" style="width: 99%;margin-left: 2px;">
+            <div id="c1" class="col-sm-6 c">
+                <div class="card" style="width:100%;height:100%">
+                    <img src="https://lh3.googleusercontent.com/xIlX3J1ayN8Nr7nPpb6vDGyTA8WmjfGAl6dFFds964-AYTPt7YptbLbPzWAswPvygdTnCzPxmT519fG3A2qa1bABa3RcuZKcnfzVfpDXSzKb5NkCNVRHqlpoSs5gBqt7Yt2C7tVoUORT2zaiPFH0o-zDuFaxxEsG8HkR-O-nl7XU1wNtOM3knELWaVwVOEQw7WYoPH9yDseXlnfwIxzdiKYz620kggR221REJOQut5u3gugxhuiI47G2Dm2QpIQ6sD2DOrArYVAeFj4A9vQCFDMqKKDYWmQ9M9oMTF8mSgbXOHL8xfNOQwgP2TNaEJR9kRmQjP7a3ipd8GXz228RHKkiV839ud0UsCj5x8u0TU5d9pFAGQ-6cn2rNiiCnTUlJrguuRWhekIMYIkVLWapLWiGMIN-VF-o9VxfVg4aUw4yaiw1TU041cbF1JK2uo27Uu3grzlQ528_AdiXbfXK6JnKuRgYUNdcV9RJmm5xTqaGsaBRXTiPV62nP1a5APEs2SJ9Q4-1eOqD80Nn05wQ47xJ7YYOwTFusinGH7BOGbSCgSfRDXQ5aoMkKJ-GDMR7Olddl55PhoZ7J31qfzyUtsD-GDNyD5qPUxzF5p-gsssx-1HN0clqFqN7XgmVBPCRDn1shpZFKKY4BUPUyjCuluO4pTI0E8fHDBAXqE7DPYScR9Y8Coq-5NENXy0w=w963-h543-no?authuser=0"
+                        class="card-img-top" alt="My First Work">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">A GYM Webpage</h5>
+                        <p class="card-text">This is a webpage made by me for a gym near me! They are very happy with
+                            this webpage.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="c2" class="col-sm-6 c">
+                <div class="card">
+                    <img src="https://lh3.googleusercontent.com/x43CN007qGce6vdkeHIH19PknY5_rlVqRgRhfwwlzdoEUopm_8XfS-mpZD6R7reYJ0ccXGuXIB1ZKcgQSc0vyxXShHNjfrUjQBIwCA3F-xR68Gt5WdW9yNSUtb6b5Wcadrt9uX5ePpQ9Qdv1o29ndwmyKsjx0iKcUd9awQy-9gPMwUgBD2l1PmD9Iktd0qh6cERgoAFXrDk8Lujjzi2n6Q1fdhhs50nK7tYubKpD-peaVlyAMn2p4YmK49oTW10Cn7QIo-1eCDkYwfvpI88t9nsOt9uYW3sM5ZEDQYtjCCi_3VIIAi9RYNA9WGhojRrNsZyjBpmyRDNbosC2iitKtzEzlyjaVforI_Pik4C_zxt_J8ZNQpXhYzH6CUFWS5EqX2oNa5PDtAVJXcuNI6yw9VTYaXzGMHSDNBztApCmqfE_bw64eYCS3j02QncINfavYefRT7hSthtttXvHbSkLaYQCZb70QUFbgOcdvxO98bhXJYgNsImzikZSgrwv7MNqRqMyl98ziC8Rp7AtMPzk49E5axf0VOT_WV921KZ4tiln9TuLNpvolCV4vjRWr6vGXeoAYu8gxv7SE-PbsYGFnY0joqiPFIxpvFbn-jECvpx7exKpqVk8bCMQnARV-fDWzwvgQjEgeXzrzlvl_AlI8Mz7cVkKQSJeDKKIYhq0SL4vuDUz-54rSfqD0zFJ=w512-h288-no?authuser=0"
+                        class="card-img-top" alt="My Second Work">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">A Webpage for a Restaurant.</h5>
+                        <p class="card-text">This is a webpage made by me for a nearby restaurant for online food
+                            delivery. They are very happy with this webpage. They enjoy a great profit every month by
+                            this.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="c3" class="col-sm-6 c">
+                <div class="card">
+                    <img src="https://lh3.googleusercontent.com/5rLzMAgf1E21LqZt6S438LlVCAyETr1KrFH3zBsQk6Pjs-nxVxTY1rPvSKAlcw0FpXsyuAyn8hr59WckDDviWIdvitVKntaCtko_HTb6xw7dSNGZfHrsuezI6dChlMCpregYI-Jv1fRdM3gqiQxZDj2HJ9vvqI8wlbmpTOvh4dizMu19qxfFDELitVvwl2kdFz772vZ6mG9RsWukysc4JlR5-JNreoOyuzNl8ryA26bYdcZvVnzTPzifIRjCQLfcGXoQPdd_kpnl63RvTlhIKiikHKWwjDegoLcHMycWdfdw0PBTeqeROd3FtTJuuu5nYUg4GG4HzB7iXjKBtjGiPFv2ZC9DrFtBQgcLFVDN7K1_uNlxqVWIB_tFlDemSYzVKb39NTrZMXKF21MCaxZqOvhDe_SzeH3jFQm8XUMKtRrEEhOgdSTOl_4yTxP1xT3r7MH7UMnbf0kyZUhNcFYiIzpKalkgzvbn6OCpkEnBznJkOY3eWwyIdqoFR06dAD19jq56EZEp6WZkK-kiZIBMOytNNHSKyW3gbgmmPebVtWi733vYutHZ0t2vgr6YPJkqpxcvfpOXivfbdcTjpLGm3IDHWN2dM-yQpiNKieDaJgkOkDKUaoqvNaFWrTKb8AcUf818n4Av2sH5lpcLyWeUxOs4oZxkUz2sLSq89UwEXwg9atVQyQMpov-JhRS9=s250-k-rw-no"
+                        class="card-img-top" alt="My Third Work">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">A Tours and Travels Web Page</h5>
+                        <p class="card-text">This is a webpage for a tour company made by me with options like travel
+                            with bus, train or flight! They are very happy with this webpage.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="c4" class="col-sm-6 c">
+                <div class="card">
+                    <img src="https://lh3.googleusercontent.com/SsTnYfgF6nCvM8R_gpPt-lqBvKD0Psys3dUycZAw_BsTu5ESBl4CnB4TUUpu7psvayEBKRq2EDLDhrOMHDAwn68H6Cy4kaumr5NAmmgEShYUj4lYkiribkAR58ewaKH6xOdJAX4ExLBJnNaTGZXnqzqQZ8tGf9IjuDZF7IMXiNV62n1ViADCO2aShS6yhIn9MtplX5NeN7IQZvFqlUGThdyBkVhDAKooaOnxV7ZlVT899Qr5K_avltd5n7ka2fUIRXvdvkGdgzFBaQALZIsUIvcRWz2IGyigSetdgYyuD9ljv4RiL2I9YYRw9kRee8wZ187aYC3XufaVWDLh6EnpnMcWvTgs-GTrv-dGmF9e8xAI3BD_Ki0PX3LZB9-83J7I3FZIsLwffH0P-ZzR-Jsw2DI9dTecMhhrNnGEP2_evb1UVA-ZFjfGgjUcE_hfUCCNs5LD216uwqv1Vo-iuyStYBQsLLR4pMmuPQP1cvViIcGHDlZhGihm-NpY0vLmhYjSkgAUvSrLraw_aHCzhKy0eqRF0ZkDQBnfemA_2OzIHtWjDsK8VrmZsQZp25Oq8Qi44_X8-2PmyoxduOwtc12s89rXW5P11ZPCDF-sFdze7k5F9G_LwDK1xiyyFJKt424mPcMPYtXy-Sl64t3oQFJ6PnLdLTItZsaJOhvQZJ7DFkweY47sTEn3bZU8qPcO=w963-h543-no?authuser=0"
+                        class="card-img-top" alt="My Fourth Work">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">A Python GUI;Tkinter Project.</h5>
+                        <p class="card-text">This is a game made by me for a game comapny near me! This is a Tic-Tac-Toe
+                            game. Though this game is not making them any profit, but it made their fresh company in the
+                            market as a knownful one.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <hr style="margin:0px;">
+        <div class="heading">
+            <h1 class="display-4">Contact Me</h1>
+        </div>
+        <div class="row" style="max-width:100%;">
+            <div class="col-sm-4" style="margin-top: 10px;">
+                <a class="href1" href="mailto:amanpoddar28pod@gmail.com"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/PICOL_icon_Mail.svg/1200px-PICOL_icon_Mail.svg.png"
+                        alt="Mail"
+                        style="text-align: center; display:block; width:70px;margin-left:auto;margin-right:auto;">
+                    <div class="links"
+                        style="text-align: center; font-size: 42px;color:Black; font-weight: bold;    padding: 0px;">
+                        Mail Me
+                    </div>
+                    <div class="links" style="font-size: 15px;padding:0px;text-align:center;">
+                        amanpoddar28pod@ gmail.com
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4" style="margin-top: 10px;">
+
+                <!--  -->
+                <a class="href1" href="tel:+918367700077"><img
+                        src="https://lh3.googleusercontent.com/7MLNT11cQPwwPbocfBKpbWjsGIpi7UMS8BPdon2hMmYqQnBLLp1nsjTN0PehEY1ajjob8AZbo7r3TGU6ZgbqntoRvW7NKoHaWIXoLBkyl4WR7jopDqtzNnNzqLxQl-ybD7xULUlWrahen_aY9xpyuG5aqP5LXUbNFFilDtvXwJ84ZIHP6lcMUm_5WQRpFs5qi5KRcOM6x_EoRbz6gMG6jHgxbNGjpW35pP264Jklql8RqtwGPJZOZraWcr6MKwILzs07IzHQMmjUD6mmWwd6JfNZq028tpo1SbDkTooukKD4LgaE_jpgrMY90lxkmCJTFPLAxR1A5OEdzQGpyCJdGDdSa14jFpJ6T1-nOhRlw0ybKIvcH-tMa87bTVNCUYLxeG23Zd5ZBh8SRJiAjR7Hdi9gHYr2oHln2cmE83R-q-kK7DyVfkgF3CX-tT4V3l92j5XAEqp7CdXBupqpy5psMtjn9BFHBk1FuLgrLzP3Qnm2QgbNRg8oFOkLUcQrm-LTnpAN5lCLBOTIP95toVqjvTVtXz4ILu3oChy1bg3Wp6_2b6IQsS2D5JYzNaUiPPYw6Daok3uLZrd4P7sHDBShfXvyKHknIViBSyRKIIi11roP1I7w0lXW9euYu6YZDixpZgysyAfGEorbRQsSq-5J01TLsDMel2yAuF1aQqqx7mv3UQMAgSpPLW7QwKUt=s500-no?authuser=0"
+                        alt="Phone"
+                        style="text-align: center; display:block; width:70px;margin-left:auto;margin-right:auto;">
+                    <div class="links"
+                        style="text-align: center; font-size: 42px;color:Black; font-weight: bold;    padding: 0px;">
+                        Call Me
+                    </div>
+                    <div class="links" style="font-size: 15px;padding:0px;text-align:center;">
+                        +918367700077
+                    </div>
+                </a>
+
+            </div>
+            <div class="col-sm-4" style="margin-top: 10px;">
+                <a class="href1" href="https://goo.gl/maps/ztYc4Gc3dH1nFcrU9" target="_blank"><img
+                        src="https://lh3.googleusercontent.com/cU_rTk2S6MlrAf94IieBJ01ly-B4C9Y0r3xDrJ5qap-INzMD3DG6VfvGz3c3IY23bfpM6GEke3y-CmI5vHTJjngnpkOaXKcJUZAlhfvREoEcMoZ3lAxEVwVeC-8KVnuKCV-el4TTbFHZCF260orJNkFYfZFxhskmX0bnyzmXCP12NBpHTnVQRepGnBwN9OMUG4EDdBl4fvbCZ1NmjOJyDvTLrhV7zkbQhoIjmIJUSUdmvMY4lyP3qEiQ43fwatUN6SrvNAx8wFyib3Bcnj-xyRUh5aUoEUA0QA_BjxGcrw69D7otpdzLrv6j6DKSdFwXuQZFqi8waDallK1CqB09LEX0HoXiHwmYQAardm3K3BhS1iiKP5FIGJFol4-iP18e9y5QEQ55I6H2eH_yv4MG_fgwZeGKNkz-R2wNxXU9O9gV-SgZwMlndXzuhH1UiICu9yegjHQ-D8f4HtNaSFyPMmpJHZ26-Auu2iWiyavYRz5_KFX9OIjioQcOw6CcX23NuxHrzW2Bd9F794-lynskqg1WaMVijRVrQ0nI9U8QnPOVTFFm2-GEeb_himZ1rSNzKAElaqy-BLuJtS681zxTjYT6GJN6spm-uuaH611pZKvZBDKYyawl48ii-Ke8-gyWde3Uo1r5kmmO_0FNi16TTPFB40UAupPHqsTItzYCpQwZNS3iVHaYSqbPYVru=s250-no?authuser=0"
+                        target="_blank" alt="Address"
+                        style="text-align: center; display:block; width:70px;margin-left:auto;margin-right:auto;">
+                    <div class="links"
+                        style="text-align: center; font-size: 42px;color:Black; font-weight: bold;    padding: 0px;">
+                        You Can Find Me Here:
+                    </div>
+                    <div class="links" style="font-size: 15px;padding:0px;text-align:center;">
+                        LOKESH TOWERS
+                        32-9-2B Madhu Gardens, Moghalrajpuram, Christurajupuram, Vijayawada, Andhra Pradesh 520010
+                    </div>
+                </a>
+            </div>
+        </div>
+        <hr style="margin-top: 65px;margin-bottom: -34px;">
+        <div class="msg" style="margin:0px 10px;">
+            <div class="empty">
+                &nbsp;
+            </div>
+
+            <div class="empty">
+                &nbsp;
+            </div>
+            <h1 style="position:sticky
+            top=100px; text-align: center; font-size: 42px;color:Black; font-weight: bold;    padding: 0px;">
+                <div class="heading">
+                    <h1 class="display-4">Message Me</h1>
+                </div>
+            </h1>
+            <div class="form">
+                <form action="" method='post'>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="Name" placeholder="Enter Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" name="email"
+                            placeholder="Enter Your email Id">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Number" class="form-label">Phone Number</label>
+                        <input type="Number" class="form-control" id="Name" name="Number"
+                            placeholder="Enter Your Contact Number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Your Feedback:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="feed" rows="3"
+                            placeholder="Plz Enter Your Feedback"></textarea>
+                    </div>
+                    <button class="btn btn-primary" href="#">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+        <hr style="margin:15px 0px;">
+        <div class="detais" style="padding: 15px;">
+            <!-- Google Map Copied Code -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.351410686388!2d80.64106001486428!3d16.508347488610998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35faadf173eed1%3A0x67d452f18bd95573!2sLOKESH%20TOWERS!5e0!3m2!1sen!2sin!4v1608789214270!5m2!1sen!2sin"
+                target="_blank" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen></iframe>
+        </div>
+        
+</body>
+<footer>
+    <div id="social">
+        <div>
+            Connect With Me
+        </div>
+        <div style="margin:2px 15px;width: 30px;">
+            <a target="_blank" href="https://www.instagram.com/amanpoddar_06"><img
+                    src="https://tse3.mm.bing.net/th?id=OIP.ZLE44k87Gp4CtVdS0zkDpwHaHa&pid=Api&P=0&w=300&h=300"
+                    alt="Instagram"
+                    style="width:100%;min-width:18px;border-radius: 25%;box-shadow: 6px 6px 7px black;"></a>
+        </div>
+        <div style="margin:2px 30px;width: 30px;">
+            <a target="_blank" href="https://www.facebook.com/aman.poddar.1297/"><img
+                    src="https://tse4.mm.bing.net/th?id=OIP.ywwkVzmobaFVIGwb9sTRhwHaHa&pid=Api&P=0&w=300&h=300"
+                    alt="Facebook"
+                    style="padding-right:1px;width:100%;min-width:18px;border-radius: 50%;box-shadow: 6px 6px 7px black;"></a>
+        </div>
+        <div style="margin:2px 15px;width: 30px;">
+            <a target="_blank" href="https://twitter.com/AmanPod21065139"><img
+                    src="https://tse2.mm.bing.net/th?id=OIP.JFHOMDeVtpCmSAYKPULZJQHaHa&pid=Api&P=0&w=300&h=300"
+                    alt="Twitter"
+                    style="padding-right:1px;width:100%;min-width:18px;border-radius: 50%;box-shadow: 6px 6px 7px black;"></a>
+        </div>
+    </div>
+    </div>
+</footer>
+
+
+</html>
